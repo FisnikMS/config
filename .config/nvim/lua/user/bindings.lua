@@ -1,5 +1,6 @@
 local k = vim.api.nvim_set_keymap;
 local opts = { silent = true };
+vim.keymap.set({ 'n', 'v' }, '<Space>', '<Nop>', { silent = true })
 return {
 	k('n', '<S-o>', 'o<Esc>', opts),
 	-- Resize with Arrows

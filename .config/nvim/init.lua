@@ -12,6 +12,10 @@ if not vim.loop.fs_stat(lazypath) then
     lazypath,
   })
 end
-vim.o.termguicolors = true
 vim.opt.rtp:prepend(lazypath) 
 require("lazy").setup("plugins")
+require("setup.telescope")
+require("setup.treesitter")
+require("setup.lsp")
+require("setup.nvim-cmp")
+require("setup.nvim")
