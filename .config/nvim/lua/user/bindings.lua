@@ -1,6 +1,5 @@
 local k = vim.api.nvim_set_keymap;
 local opts = { silent = true };
-vim.keymap.set({ 'n', 'v' }, '<Space>', '<Nop>', { silent = true })
 return {
 	k('n', '<S-o>', 'o<Esc>', opts),
 	-- Resize with Arrows
@@ -18,7 +17,7 @@ return {
 
 	k('n', '<zz>', ':wq!', opts),
 
-	-- move 
+	-- move
 	k("v", "J", ":m '>+1<CR>gv=gv", opts),
 	k("v", "K", ":m '<-2<CR>gv=gv", opts),
 
@@ -29,5 +28,7 @@ return {
 	k("v", "<leader>y", "\"+y", opts),
 	k("n", "<leader>y", "\"+Y", opts),
 	k("n", "<leader>d", "\"+_d", opts),
-	k("v", "<leader>d", "\"+_d", opts)
+	k("v", "<leader>d", "\"+_d", opts),
+	k('n', '<leader>f', '":Format<CR>"', opts)
+
 }
