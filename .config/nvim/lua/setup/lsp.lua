@@ -53,10 +53,14 @@ local servers = {
 	clangd = {},
 	gopls = {},
 	pyright = {},
-	rust_analyzer = {},
+	rust_analyzer = {
+		cargo = {
+			allFeatures = true
+		},
+		filetypes = {"rust"}
+	},
 	tsserver = {},
 	html = { filetypes = { 'html', 'twig', 'hbs' } },
-
 	lua_ls = {
 		Lua = {
 			workspace = { checkThirdParty = false },
@@ -89,3 +93,5 @@ mason_lspconfig.setup_handlers {
 		}
 	end,
 }
+
+

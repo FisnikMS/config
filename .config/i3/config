@@ -205,7 +205,7 @@ status_command /usr/bin/bumblebee-status/bumblebee-status \
 }
 
 exec feh --bg-scale ~/Pictures/wallpaper.jpg
-exec-always xrandr --output DP-0 --primary --auto --left-of HDMI-0
+exec xrandr --output DP-0 --primary --auto --left-of HDMI-0
 exec --no-startup-id picom -CGb
 
 workspace 5 output HDMI-0
@@ -215,6 +215,6 @@ workspace 2 output DP-0
 workspace 3 output DP-0
 workspace 4 output DP-0
 
-assign [class="Firefox"] $ws3
+assign [class="firefox"] $ws3
 
 

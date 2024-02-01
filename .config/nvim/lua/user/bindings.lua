@@ -29,6 +29,8 @@ return {
 	k("n", "<leader>y", "\"+Y", opts),
 	k("n", "<leader>d", "\"+_d", opts),
 	k("v", "<leader>d", "\"+_d", opts),
-	k('n', '<leader>f', '":Format<CR>"', opts)
+	vim.keymap.set("n", '<leader>f', function() vim.lsp.buf.format { async = true } end,
+		{ noremap = true, silent = true })
+	--k('n', '<leader>f', ':Format<CR>', opts)
 
 }
