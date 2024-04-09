@@ -4,7 +4,7 @@ return {
 		dependencies = { 'rktjmp/lush.nvim' },
 		priority = 1000,
 		config = function()
-			vim.cmd('colorscheme forestbones')
+			vim.cmd('colorscheme nordbones')
 			vim.api.nvim_set_hl(0, "normal", { bg = "none" })
 			vim.api.nvim_set_hl(0, "normalfloat", { bg = "none" })
 		end
