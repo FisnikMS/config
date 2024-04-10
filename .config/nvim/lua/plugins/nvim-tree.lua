@@ -19,7 +19,7 @@ return {
 				--open_on_setup = false,
 				open_on_tab = false,
 				hijack_cursor = false,
-				update_cwd = true,
+				sync_root_with_cwd = true,
 				hijack_directories = {
 					enable = true,
 					auto_open = true,
@@ -54,6 +54,11 @@ return {
 					open_file = {
 						quit_on_open = true
 					},
+          --change_dir = {
+          --  global = true,
+          --  enable = true,
+          --  restrict_above_cwd= true
+          --},
 				},
 				renderer = {
 					highlight_git = true,
