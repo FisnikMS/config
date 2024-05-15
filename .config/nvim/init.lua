@@ -1,6 +1,4 @@
 require("user.bindings")
-vim.g.mapleader = ' '
-vim.g.maplocalleader = ' '
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
 	vim.fn.system({
@@ -21,3 +19,4 @@ require("setup.nvim-cmp")
 require("setup.nvim")
 require("setup.lspkind")
 require("setup.theme")
+require("setup.bufferline")

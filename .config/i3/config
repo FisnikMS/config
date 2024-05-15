@@ -6,7 +6,7 @@
 #
 
 # i3 config file (v4)
-#
+# 
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
 set $mod Mod4
@@ -209,6 +209,7 @@ exec xrandr --output DP-0 --primary --auto --left-of HDMI-0
 exec --no-startup-id picom -CGb
 
 exec xset r rate 200 30
+bindsym Print exec flameshot gui 
 
 workspace 5 output HDMI-0
 workspace 6 output HMDI-0
@@ -218,5 +219,4 @@ workspace 3 output DP-0
 workspace 4 output DP-0
 
 assign [class="firefox"] $ws3
-
 

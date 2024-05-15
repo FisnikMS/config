@@ -1,3 +1,4 @@
+
 vim.o.hlsearch = false
 
 vim.o.smartindent = true
