@@ -38,14 +38,16 @@ return {
 
   k("n", "<leader>s", "<cmd>split<CR>", opts),
   k("n", "<leader>v", "<cmd>vsplit<CR>", opts),
-  k("n", "<S-l>", "<cmd>tabNext<CR>", opts),
-  k("n", "<S-h>", "<cmd>tabprevious<CR>", opts),
+  k("n", "<Tab>", "<cmd>tabNext<CR>", opts),
+  k("n", "<S-Tab>", "<cmd>tabprevious<CR>", opts),
   k("n", "<leader>tc", "<cmd>tabclose<CR>", opts),
   k("n", "<leader>to", "<cmd>tabonly<CR>", opts),
   k("n", "<leader>ts", "<cmd>tab split<CR>", opts),
 
-  k("n", "<Tab>", "<cmd>bnext<CR>", opts),
-  k("n", "<S-Tab>", "<cmd>bprevious<CR>", opts),
+  k("n", "<S-l>", "<cmd>bnext<CR>", opts),
+  k("n", "<S-h>", "<cmd>bprevious<CR>", opts),
+  k("n", "<leader>cb", "<cmd>bd<CR>", opts)
+
 
 
 }
