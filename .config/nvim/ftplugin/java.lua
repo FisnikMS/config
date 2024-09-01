@@ -46,4 +46,11 @@ if not jdtls_ok then
   vim.notify "JDTLS not found, install with `:LspInstall jdtls`"
   return
 end
-require('jdtls').start_or_attach(config)
+jdtls.start_or_attach(config)
+
+-- Needed for debugging
+--config['on_attach'] = function(client, bufnr)
+--  jdtls.setup_dap({ hotcodereplace = 'auto' })
+--  require('jdtls.dap').setup_dap_main_class_configs()
+--end
+
